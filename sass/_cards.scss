@@ -1,0 +1,48 @@
+.card {
+
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  box-shadow: -1rem 0 3rem rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #000000;
+  background-color: #f6f6f6;
+
+
+  justify-content: center;
+  justify-items: center;
+
+
+  display: grid;
+
+
+
+  &__title {
+    font-weight: 400;
+    left: 20px;
+    top: 15px;
+    grid-row: 1/2;
+    grid-column: 1/-1;
+  }
+
+  &__svg {
+
+    margin: 1rem 0;
+    height: 8rem;
+    width: 8rem;
+
+
+  }
+
+}
+
+//.card:hover {
+//transform: translateY(-20px);
+// transition: 0.4s ease-out;
+//}
+
+//    //

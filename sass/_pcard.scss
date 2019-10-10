@@ -1,0 +1,62 @@
+.pcard {
+
+
+    &__item {
+        background-color: #fff;
+        width: 26rem;
+        height: 37rem;
+        box-shadow: 0;
+        margin: auto;
+        overflow: hidden;
+        border-radius: 10px 10px 10px 10px;
+        transform: scale(0.95);
+
+        transition: box-shadow 0.5s, transform 0.5s;
+
+        display: grid;
+        grid-template-rows: 3rem 30rem 4rem;
+
+        &:hover {
+            transform: scale(1);
+            box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        &--name {
+            font-size: $default-font-size;
+            background-color: #71c7ec;
+            color: #fff;
+            font-weight: 400;
+            letter-spacing: 3px;
+        }
+
+        &--bot {
+
+            background: linear-gradient(to right, $nav-primary-dark 0%, $nav-primary-dark 50%, #71c7ec 50%, #71c7ec 100%);
+            text-align: center;
+            align-self: center;
+            height: 100%;
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            &__code {
+                align-self: center;
+                background-color: $nav-primary-dark;
+            }
+
+            &__demo {
+                align-self: center;
+                background-color: #71c7ec;
+            }
+        }
+
+
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+}

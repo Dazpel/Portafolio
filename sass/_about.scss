@@ -1,0 +1,45 @@
+.about {
+    background-color: #ececec;
+    text-align: center;
+    color: #000000;
+    display: grid;
+
+
+    grid-template-rows: repeat(2, min-content) min-content;
+
+    &__title {
+        letter-spacing: 2px;
+        background-color: #71c7ec;
+        color: #ffffff;
+        font-weight: 300;
+        grid-row: 1/2;
+        grid-column: 1 / -1;
+        padding: 1rem;
+    }
+
+    &__paragraph {
+        margin-top: 2rem;
+        grid-row: 2/3;
+        grid-column: 1/-1
+    }
+
+    &__wrapper {
+        background-color: #ececec;
+        display: grid;
+        grid-column: 1/-1;
+        overflow: hidden;
+
+
+        &__container {
+            padding: 2rem;
+            display: grid;
+            grid-column: 1/-1;
+            grid-row-gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+
+        }
+
+
+    }
+
+}

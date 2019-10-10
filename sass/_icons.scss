@@ -1,0 +1,23 @@
+.fa {
+    //background-color: #ffffff;
+    padding: 1rem;
+    font-size: 3rem;
+    width: 5rem;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    transition: all .2s;
+    z-index: 10;
+    box-shadow: 0 1rem 2rem rgba($nav-black,.2);
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($nav-black,.2);
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+    
+  }

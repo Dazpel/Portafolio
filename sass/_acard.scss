@@ -1,0 +1,32 @@
+.acard {
+
+    justify-content: center;
+    justify-items: center;
+
+    &__item {
+        width: 15rem;
+        height: 15rem;
+        margin: auto;
+        overflow: hidden;
+        display: grid;
+        
+        grid-template-rows: min-content 2rem;
+
+        &--name {
+            
+            font-size: $default-font-size;
+            color: #000000;
+            font-weight: 400;
+            letter-spacing: 3px;
+        }
+    }
+
+    &__img {
+        height: 12rem;
+        width: 10rem;
+        display: inline-block;
+    }
+
+
+
+}
