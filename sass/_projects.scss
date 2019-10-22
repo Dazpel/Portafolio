@@ -4,8 +4,9 @@
     color: #000000;
     overflow: hidden;
     display: grid;
-    grid-template-columns: repeat(2, minmax(25rem, 1fr));
+    grid-template-columns: repeat(2, minmax(20rem, 1fr));
     grid-template-rows: min-content min-content;
+    align-items: center;
 
     &__title {
         letter-spacing: 2px;
@@ -25,6 +26,7 @@
 
 
         &__container {
+            align-items: center;
             padding: 2rem;
             display: grid;
             grid-column: 1/-1;

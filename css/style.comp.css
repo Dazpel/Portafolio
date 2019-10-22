@@ -32,15 +32,11 @@ body {
   font-weight: 400; }
 
 .main {
-  font-size: 4rem;
+  font-size: 32pt;
+  line-height: 42pt;
+  text-align: center;
   font-weight: 400;
-  letter-spacing: 1rem;
-  justify-self: center; }
-
-.sub {
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: 1.5rem;
+  letter-spacing: 10px;
   justify-self: center; }
 
 p {
@@ -171,6 +167,10 @@ canvas {
   background-color: #fff;
   color: #0976b4; }
 
+.animated {
+  animation: moveInBottom .5s ease-out .75s;
+  animation-fill-mode: backwards; }
+
 .about {
   background-color: #ececec;
   text-align: center;
@@ -193,7 +193,8 @@ canvas {
     background-color: #ececec;
     display: grid;
     grid-column: 1/-1;
-    overflow: hidden; }
+    overflow: hidden;
+    margin-bottom: 2rem; }
     .about__wrapper__container {
       padding: 2rem;
       display: grid;
@@ -207,8 +208,9 @@ canvas {
   color: #000000;
   overflow: hidden;
   display: grid;
-  grid-template-columns: repeat(2, minmax(25rem, 1fr));
-  grid-template-rows: min-content min-content; }
+  grid-template-columns: repeat(2, minmax(20rem, 1fr));
+  grid-template-rows: min-content min-content;
+  align-items: center; }
   .projects__title {
     letter-spacing: 2px;
     background-color: #71c7ec;
@@ -223,6 +225,7 @@ canvas {
     display: grid;
     grid-column: 1/-1; }
     .projects__wrapper__container {
+      align-items: center;
       padding: 2rem;
       display: grid;
       grid-column: 1/-1;
@@ -261,14 +264,20 @@ canvas {
   height: 5rem;
   color: #fff;
   background-color: #262F38; }
+  .fa-github_fg:hover {
+    background-color: #04C2C9; }
 
 .fa-file_ff {
   color: #fff;
   background-color: #262F38; }
+  .fa-file_ff:hover {
+    background-color: #04C2C9; }
 
 .fa-linkedin_fl {
   color: #fff;
   background-color: #262F38; }
+  .fa-linkedin_fl:hover {
+    background-color: #04C2C9; }
 
 @keyframes shadow-pulse {
   0% {
@@ -282,6 +291,14 @@ canvas {
     -webkit-transform: rotate(0deg); }
   to {
     -webkit-transform: rotate(359deg); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
 
 .card {
   height: 100%;
@@ -311,7 +328,7 @@ canvas {
 .pcard__item {
   background-color: #fff;
   width: 26rem;
-  height: 37rem;
+  height: 38rem;
   box-shadow: 0;
   margin: auto;
   overflow: hidden;
@@ -319,29 +336,31 @@ canvas {
   transform: scale(0.95);
   transition: box-shadow 0.5s, transform 0.5s;
   display: grid;
-  grid-template-rows: 3rem 30rem 4rem; }
+  grid-template-rows: 3rem 30rem 5rem; }
   .pcard__item:hover {
     transform: scale(1);
     box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.2); }
   .pcard__item--name {
     font-size: 1.6rem;
-    background-color: #71c7ec;
+    background-color: #1B242F;
     color: #fff;
     font-weight: 400;
     letter-spacing: 3px; }
   .pcard__item--bot {
-    background: linear-gradient(to right, #28b485 0%, #28b485 50%, #71c7ec 50%, #71c7ec 100%);
+    background: #262F38;
     text-align: center;
     align-self: center;
     height: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr); }
     .pcard__item--bot__code {
-      align-self: center;
-      background-color: #28b485; }
+      background-color: #262F38;
+      color: #fff;
+      align-self: center; }
     .pcard__item--bot__demo {
-      align-self: center;
-      background-color: #71c7ec; }
+      background-color: #262F38;
+      color: #fff;
+      align-self: center; }
 
 .pcard__img {
   width: 100%;
@@ -377,7 +396,14 @@ canvas {
   text-transform: uppercase;
   text-decoration: none;
   border-right: 2px solid black;
+  transition: all .2s;
   font-size: 1.6rem;
   display: block;
   border: none;
   cursor: pointer; }
+  .btn:hover, .btn:focus {
+    transform: translateY(-3px);
+    background-color: #E31B6D; }
+    .btn:hover::after, .btn:focus::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0; }

@@ -7,7 +7,7 @@
     grid-template-columns: [logo-start] min-content [logo-end info-start] 1fr [info-end navi-start] min-content [navi-end];
 
     &__logo {
-        
+
         grid-row: 1/1;
         grid-column: logo-start/logo-end;
         z-index: 1000;
@@ -25,6 +25,7 @@
     }
 
     &__info {
+
         grid-row: 3/5;
         grid-column: logo-end/navi-start;
         display: grid;
@@ -39,6 +40,7 @@
             justify-self: center;
             align-self: center;
             backface-visibility: hidden;
+
 
         }
     }
@@ -55,21 +57,29 @@ canvas {
     height: 100%;
 }
 
-.fa-github{
-    background-color: #fff;   
-    color:#333;
+.fa-github {
+    background-color: #fff;
+    color: #333;
 }
 
-.fa-file{
+.fa-file {
     background-color: #fff;
     color: #003A8F;
-    &__pulse{
+
+    &__pulse {
         animation: shadow-pulse 4s infinite;
     }
-    
+
 }
 
-.fa-linkedin{
+.fa-linkedin {
     background-color: #fff;
     color: #0976b4;
+}
+
+.animated {
+
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
+
 }

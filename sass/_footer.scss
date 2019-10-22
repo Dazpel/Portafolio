@@ -45,6 +45,10 @@
         height: 5rem;
         color: #fff;
         background-color: #262F38;
+
+        &:hover{
+            background-color: #04C2C9;
+        }
     }
 }
 
@@ -55,7 +59,12 @@
     &_ff {
         color: #fff;
         background-color: #262F38;
+
+        &:hover{
+            background-color: #04C2C9;
+        }
     }
+
 }
 
 .fa-linkedin {
@@ -65,5 +74,11 @@
     &_fl {
         color: #fff;
         background-color: #262F38;
+
+        &:hover{
+            background-color: #04C2C9;
+        }
+        
     }
+    
 }
