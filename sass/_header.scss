@@ -73,6 +73,7 @@ canvas {
     color: #003A8F;
 
     &__pulse {
+        cursor: pointer;
         animation: shadow-pulse 4s infinite;
     }
 
