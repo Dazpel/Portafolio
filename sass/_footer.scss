@@ -8,7 +8,6 @@
     grid-template-rows: repeat(3, 1fr);
 
     &__logos {
-        padding: 4rem;
         display: grid;
         grid-column: 3/7;
         grid-row: 2/3;
@@ -17,6 +16,10 @@
         justify-items: center;
         grid-auto-flow: column;
         // grid-template-columns: repeat(3, min-content);
+
+        @media only screen and (max-width: $medium) {
+            grid-column-gap: 1.5rem;
+        }
     }
 
     &__note {
@@ -27,6 +30,12 @@
         letter-spacing: 2px;
         grid-column: 3/7;
         grid-row: 3/4;
+        margin-top: 1rem; 
+
+        @media only screen and (max-width: $medium) {
+            font-size: 9pt;
+            letter-spacing: 1px;
+        }
 
     }
 }

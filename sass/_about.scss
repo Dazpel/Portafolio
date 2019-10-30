@@ -18,9 +18,18 @@
     }
 
     &__paragraph {
-        margin-top: 2rem;
+        text-align: center;
+        margin: 2rem 5rem;
+        line-height: 2.4rem;
         grid-row: 2/3;
-        grid-column: 1/-1
+        grid-column: 1/-1;
+
+        @media only screen and (max-width: $medium) {
+            font-size: 10pt;
+            line-height: 21pt;
+            margin: 1rem 3rem;
+            letter-spacing: 1px;
+        }
     }
 
     &__wrapper {
@@ -42,5 +51,7 @@
 
 
     }
+
+
 
 }

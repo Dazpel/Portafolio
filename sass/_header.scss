@@ -32,6 +32,7 @@
         justify-self: center;
         align-self: center;
         grid-template-rows: repeat(2, min-content);
+        margin-top: 1.5rem;
 
         &--logos {
             display: grid;
@@ -40,9 +41,10 @@
             justify-self: center;
             align-self: center;
             backface-visibility: hidden;
-
-
+            margin-top: 1rem;
         }
+
+        
     }
 }
 

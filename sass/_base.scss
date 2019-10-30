@@ -25,6 +25,13 @@ $nav-primary-dark: #28b485;
 
 $nav-grey-dark: #333;
 
+// RESPONSIVE BREAKPOINTS
+$largest: 75em;   // 1200px
+$large: 62.5em;   // 1000px
+$medium: 49.9375em;    // 799px;
+$small: 37.5em;    // 600px;
+
+
 
 // FONT VARIABLES
 $font-primary: "Lato",
@@ -43,9 +50,9 @@ html {
     box-sizing: border-box;
     font-size: 62.5%; // 1rem = 10px ;
 
-    // @media only screen and (max-width: $bp-largest) {
-    //    font-size: 50%;
-    //}
+    @media only screen and (max-width: $medium) {
+        font-size: 50%;
+    }
 }
 
 body {
