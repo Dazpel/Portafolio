@@ -30,7 +30,7 @@
         letter-spacing: 2px;
         grid-column: 3/7;
         grid-row: 3/4;
-        margin-top: 1rem; 
+        margin-top: 1rem;
 
         @media only screen and (max-width: $medium) {
             font-size: 9pt;
@@ -55,7 +55,7 @@
         color: #fff;
         background-color: #262F38;
 
-        &:hover{
+        &:hover {
             background-color: #04C2C9;
         }
     }
@@ -69,7 +69,7 @@
         color: #fff;
         background-color: #262F38;
 
-        &:hover{
+        &:hover {
             background-color: #04C2C9;
         }
     }
@@ -84,10 +84,10 @@
         color: #fff;
         background-color: #262F38;
 
-        &:hover{
+        &:hover {
             background-color: #04C2C9;
         }
-        
+
     }
-    
+
 }

@@ -154,6 +154,10 @@ ORDER: Base + typography > general layout + grid > page layout > components
       align-self: center;
       backface-visibility: hidden;
       margin-top: 1rem; }
+    @media only screen and (max-width: 49.9375em) {
+      .header__info {
+        margin-bottom: 8rem;
+        margin-right: 3.5rem; } }
 
 canvas {
   display: block;
@@ -197,18 +201,21 @@ canvas {
     grid-column: 1 / -1;
     padding: 1rem; }
   .about__paragraph {
-    text-align: center;
+    text-align: left;
     margin: 2rem 5rem;
     line-height: 2.4rem;
     grid-row: 2/3;
     grid-column: 1/-1; }
     @media only screen and (max-width: 49.9375em) {
       .about__paragraph {
-        font-size: 10pt;
-        line-height: 21pt;
-        margin: 1rem 3rem;
+        text-align: left;
+        font-size: 16px;
+        width: 24em;
+        line-height: 28px;
+        margin: 1rem 0 1rem 3rem;
         letter-spacing: 1px; } }
   .about__wrapper {
+    margin-top: 2rem;
     background-color: #ececec;
     display: grid;
     grid-column: 1/-1;
@@ -383,10 +390,17 @@ canvas {
       color: #000000;
       font-weight: 400;
       letter-spacing: 3px; }
+      @media only screen and (max-width: 49.9375em) {
+        .acard__item--name {
+          font-size: 9pt;
+          letter-spacing: 2px; } }
   .acard__img {
     height: 7rem;
     width: 10rem;
     display: inline-block; }
+    @media only screen and (max-width: 49.9375em) {
+      .acard__img {
+        height: 6rem; } }
 
 .btn {
   color: #fff;

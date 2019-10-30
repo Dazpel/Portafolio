@@ -18,26 +18,31 @@
     }
 
     &__paragraph {
-        text-align: center;
+        text-align: left;
         margin: 2rem 5rem;
         line-height: 2.4rem;
         grid-row: 2/3;
         grid-column: 1/-1;
 
         @media only screen and (max-width: $medium) {
-            font-size: 10pt;
-            line-height: 21pt;
-            margin: 1rem 3rem;
+
+            text-align: left;
+            font-size: 16px;
+            width: 24em;
+            line-height: 28px;
+            margin: 1rem 0 1rem 3rem;
             letter-spacing: 1px;
         }
     }
 
     &__wrapper {
+        margin-top: 2rem;
         background-color: #ececec;
         display: grid;
         grid-column: 1/-1;
         overflow: hidden;
         margin-bottom: 2rem;
+
 
 
         &__container {
