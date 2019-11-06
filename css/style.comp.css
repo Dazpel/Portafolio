@@ -216,7 +216,7 @@ canvas {
     display: grid; }
     @media only screen and (max-width: 49.9375em) {
       .about__paragraph {
-        text-align: left;
+        text-align: justify;
         font-size: 16px;
         line-height: 28px;
         margin: 1rem 2rem 1rem 2rem;
