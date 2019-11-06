@@ -29,8 +29,7 @@
         grid-row: 3/5;
         grid-column: logo-end/navi-start;
         display: grid;
-        justify-self: center;
-        align-self: center;
+        text-align: left;
         grid-template-rows: repeat(2, min-content);
         margin-top: 1.5rem;
 
@@ -42,11 +41,16 @@
             align-self: center;
             backface-visibility: hidden;
             margin-top: 1rem;
+
+            @media only screen and (max-width: $medium) {
+                margin-right: 10px;
+            }
         }
 
         @media only screen and (max-width: $medium) {
             margin-bottom: 8rem;
             margin-right: 3.5rem;
+            
         }
         
     }
